@@ -106,5 +106,5 @@ def c(number_of_groups):
     return fig, message
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
 
