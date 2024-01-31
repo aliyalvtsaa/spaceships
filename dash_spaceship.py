@@ -1,6 +1,5 @@
 from dash import Dash, dcc, html, Input, Output, callback
 import dash_bootstrap_components as dbc
-from dash_bootstrap_templates import load_figure_template
 
 import pandas as pd 
 import numpy as np
@@ -14,7 +13,6 @@ from plotly.graph_objs import *
 spaceships = pd.read_csv('Ship game.csv', sep=';')
 cols = [4,5,6]
 spaceships.drop(spaceships.columns[cols],axis=1,inplace=True)
-load_figure_template("PULSE")
 app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
 
 
